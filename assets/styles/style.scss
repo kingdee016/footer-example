@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    $top-space: 7rem;
+
+    padding: 0rem auto;
+    width: 100%;
+    height: 100vh;
+    
+    .big-div{
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        .center{
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: calc($top-space - 3.5rem);
+            .top-div{
+            background:linear-gradient(to right, rgb(150, 40, 150), rgb(43, 43, 255), rgb(0, 60, 255));
+            border-radius: .6rem;
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 1.8rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            z-index: 2;
+            .left{
+                color: white;
+                height: 100%;
+                h1{
+                    font-size: 2.4vw;
+                }
+                .p-value{
+                    display: flex;
+                    margin: 1rem 0 0 0;
+                    font-size: 1.3vw;
+                    justify-content: space-between;
+                    p{
+                        margin-right: 0.9rem;
+                    }
+                }
+            }
+            .right{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                button{
+                    margin-right: 1rem;
+                   padding: 0.8rem 1rem;
+                    border-radius: 2rem;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                .coloured{
+                        background-color: black;
+                        color: white;
+                        border: none;
+                        &:hover{
+                            background-color: white;
+                            color: black;
+                        }
+                }
+                .transparent{
+                    background-color: transparent;
+                    border: 1px solid white;
+                    color: white;
+                    &:hover{
+                        color: black;
+                        border: 2px solid black;
+                    }
+                }
+            }
+        }
+        }
+        
+        .down-div{
+            position: relative;
+            top: $top-space;
+            background-color: rgb(25, 25, 88);
+            width: 100%;
+            padding: 10rem 8rem 3rem 8rem;
+            h1{
+                color: white;
+            }
+            #icon{
+                color: purple;
+            }
+            .text-div{
+                display: flex;
+                height: 70%;
+                padding: 3rem 0 0 0 ;
+                justify-content: space-between;
+                .div{
+                    font-size: 1.1vw;
+                    h1{
+                        font-size: 1.4vw;
+                        color: rgb(105, 105, 105);
+                    }
+                    ul{
+                        margin: .6rem 0 0 0 ;
+                    }
+                    li{
+                        list-style: none;
+                        line-height: 2vw;
+                        color: rgb(221, 221, 221);
+                    }
+                }
+            }
+            hr{
+                margin: .7rem 0 0 0;
+            }
+            .last-div{
+                width: 100%;
+                height: 5%;
+                margin: 1rem 0 0 0;
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                .left{
+                    display: flex;
+                    justify-content: space-between;
+                    color: rgb(102, 102, 102);
+                    h4{
+                        margin-right: 1rem;
+                    }
+                }
+                .right{
+                    button{
+                        background-color: transparent;
+                        border: 1px solid rgb(43, 159, 255);
+                        color: rgb(43, 159, 255);
+                        border-radius: 2rem;
+                        padding: .4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    footer{
+        $top-space: 6rem;
+        .big-div{
+            .center{
+                top: calc($top-space - 3.5rem);
+                button{
+                    font-size: 10px;
+                }
+            }
+            .down-div{
+                padding: 6rem 6rem 3rem 6rem;
+                top: $top-space;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 656px) {
+    footer{
+        .big-div{
+            .center{
+                .top-div{
+                    width: 90%;
+                }
+                button{
+                    font-size: 10px;
+                }
+            }
+            .down-div{
+                padding: 4rem 4rem 2rem 4rem;
+                .text-div{
+                    padding: 1rem 0 0 0 ;
+                }
+                .last-div{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 520px) {
+    footer{
+        .big-div{
+            .center{
+                position: static;
+                .top-div{
+                   flex-direction: column;
+                   justify-content: center;
+                   align-items: center;
+                   padding: 1rem;
+
+                    width: 100%;
+                    border-radius: 0;
+                    .left{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        h1{
+                            font-size: 24px;
+                        }
+                        .p-value{
+                            margin: 0.5rem 0;
+                            font-size: 11px;
+                            p{
+                                margin-right: 1.5rem;
+                            }
+                        }
+                    }
+                    .right{
+                         button{
+                            font-size: 10px;
+                            padding: 0.5rem 1rem;
+                        }
+                    }
+                }
+               
+            }
+            .down-div{
+                position: static;
+                padding: 2rem 2rem;
+                .text-div{
+                    padding: 1rem 0 0 0 ;
+                }
+                .last-div{
+                    font-size: 10px;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    button{
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

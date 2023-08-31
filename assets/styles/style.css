@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  padding: 0rem auto;
+  width: 100%;
+  height: 100vh;
+}
+footer .big-div {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+footer .big-div .center {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 3.5rem;
+}
+footer .big-div .center .top-div {
+  background: linear-gradient(to right, rgb(150, 40, 150), rgb(43, 43, 255), rgb(0, 60, 255));
+  border-radius: 0.6rem;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 1.8rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+footer .big-div .center .top-div .left {
+  color: white;
+  height: 100%;
+}
+footer .big-div .center .top-div .left h1 {
+  font-size: 2.4vw;
+}
+footer .big-div .center .top-div .left .p-value {
+  display: flex;
+  margin: 1rem 0 0 0;
+  font-size: 1.3vw;
+  justify-content: space-between;
+}
+footer .big-div .center .top-div .left .p-value p {
+  margin-right: 0.9rem;
+}
+footer .big-div .center .top-div .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .big-div .center .top-div .right button {
+  margin-right: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 2rem;
+}
+footer .big-div .center .top-div .right button:hover {
+  cursor: pointer;
+}
+footer .big-div .center .top-div .right .coloured {
+  background-color: black;
+  color: white;
+  border: none;
+}
+footer .big-div .center .top-div .right .coloured:hover {
+  background-color: white;
+  color: black;
+}
+footer .big-div .center .top-div .right .transparent {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+footer .big-div .center .top-div .right .transparent:hover {
+  color: black;
+  border: 2px solid black;
+}
+footer .big-div .down-div {
+  position: relative;
+  top: 7rem;
+  background-color: rgb(25, 25, 88);
+  width: 100%;
+  padding: 10rem 8rem 3rem 8rem;
+}
+footer .big-div .down-div h1 {
+  color: white;
+}
+footer .big-div .down-div #icon {
+  color: purple;
+}
+footer .big-div .down-div .text-div {
+  display: flex;
+  height: 70%;
+  padding: 3rem 0 0 0;
+  justify-content: space-between;
+}
+footer .big-div .down-div .text-div .div {
+  font-size: 1.1vw;
+}
+footer .big-div .down-div .text-div .div h1 {
+  font-size: 1.4vw;
+  color: rgb(105, 105, 105);
+}
+footer .big-div .down-div .text-div .div ul {
+  margin: 0.6rem 0 0 0;
+}
+footer .big-div .down-div .text-div .div li {
+  list-style: none;
+  line-height: 2vw;
+  color: rgb(221, 221, 221);
+}
+footer .big-div .down-div hr {
+  margin: 0.7rem 0 0 0;
+}
+footer .big-div .down-div .last-div {
+  width: 100%;
+  height: 5%;
+  margin: 1rem 0 0 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+footer .big-div .down-div .last-div .left {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(102, 102, 102);
+}
+footer .big-div .down-div .last-div .left h4 {
+  margin-right: 1rem;
+}
+footer .big-div .down-div .last-div .right button {
+  background-color: transparent;
+  border: 1px solid rgb(43, 159, 255);
+  color: rgb(43, 159, 255);
+  border-radius: 2rem;
+  padding: 0.4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  footer .big-div .center {
+    top: 2.5rem;
+  }
+  footer .big-div .center button {
+    font-size: 10px;
+  }
+  footer .big-div .down-div {
+    padding: 6rem 6rem 3rem 6rem;
+    top: 6rem;
+  }
+}
+@media only screen and (max-width: 656px) {
+  footer .big-div .center .top-div {
+    width: 90%;
+  }
+  footer .big-div .center button {
+    font-size: 10px;
+  }
+  footer .big-div .down-div {
+    padding: 4rem 4rem 2rem 4rem;
+  }
+  footer .big-div .down-div .text-div {
+    padding: 1rem 0 0 0;
+  }
+  footer .big-div .down-div .last-div {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  footer .big-div .center {
+    position: static;
+  }
+  footer .big-div .center .top-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0;
+  }
+  footer .big-div .center .top-div .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .big-div .center .top-div .left h1 {
+    font-size: 24px;
+  }
+  footer .big-div .center .top-div .left .p-value {
+    margin: 0.5rem 0;
+    font-size: 11px;
+  }
+  footer .big-div .center .top-div .left .p-value p {
+    margin-right: 1.5rem;
+  }
+  footer .big-div .center .top-div .right button {
+    font-size: 10px;
+    padding: 0.5rem 1rem;
+  }
+  footer .big-div .down-div {
+    position: static;
+    padding: 2rem 2rem;
+  }
+  footer .big-div .down-div .text-div {
+    padding: 1rem 0 0 0;
+  }
+  footer .big-div .down-div .last-div {
+    font-size: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .big-div .down-div .last-div button {
+    margin-top: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
